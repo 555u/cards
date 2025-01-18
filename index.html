@@ -6,78 +6,152 @@
     <title>دقلي🤙</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background: #f4f4f9;
-            color: #333;
+            background: linear-gradient(135deg, #6d238f, #164d88);
+            color: #fff;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 100vh;
+            overflow: hidden;
         }
 
         .container {
             text-align: center;
-            padding: 20px;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
             max-width: 400px;
             width: 90%;
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
         }
 
         .container img {
-            width: 100px;
-            height: 100px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
         .container h1 {
-            font-size: 1.8rem;
+            font-size: 2rem;
             margin-bottom: 10px;
-            color: #0078ff;
+            color: #6d238f;
         }
 
         .container p {
             margin-bottom: 20px;
-            color: #555;
+            color: #333;
+            font-size: 1.2rem;
         }
 
         .social-links {
             display: flex;
             flex-direction: column;
             gap: 15px;
+            animation: slideUp 1.5s ease-in-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
         }
 
         .social-links a {
             text-decoration: none;
-            font-size: 1rem;
+            font-size: 1.1rem;
+            font-weight: bold;
             color: #fff;
-            background: #6215a0;
-            padding: 10px 15px;
-            border-radius: 5px;
-            transition: background 0.3s ease;
+            background: #6d238f;
+            padding: 12px 20px;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .social-links a:hover {
             background: #164d88;
+            transform: scale(1.05);
         }
 
         .footer {
             margin-top: 20px;
             font-size: 0.9rem;
-            color: #777;
+            color: #555;
+        }
+
+        .pdf-button {
+            margin-top: 20px;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #fff;
+            background: #d9534f;
+            padding: 12px 20px;
+            border-radius: 50px;
+            transition: background 0.3s ease;
+            display: inline-block;
+        }
+
+        .pdf-button:hover {
+            background: #c9302c;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            .social-links a {
+                font-size: 1rem;
+                padding: 10px 15px;
+            }
+
+            .container img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container h1 {
+                font-size: 1.5rem;
+            }
+
+            .social-links a {
+                font-size: 0.9rem;
+                padding: 8px 12px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <img src="https://lh3.googleusercontent.com/pw/AP1GczPCdbbw18MlfyeM0vzsjUMmiBDdYhrvPQeKjj-PnzY8MRNd953xkAHfJSt2yb-ltruDUnE3-vDLyThB9qcn84flgccIhqMsThgE6bHNabJw0t5xObEdj1a28_ypSwfd-oiAb_vEZOCRRqgXCVUQBHyBKA=w356-h633-s-no-gm?authuser=0" alt="Your Profile Picture">
-        <h1>Rashed Humaid</h1>
-        <p>Connect with me on my socials!</p>
+        <h1>𝓻𝓪𝓼𝓱𝓮𝓭</h1>
+        <p>دقلي🤙</p>
         <div class="social-links">
             <a href="https://instagram.com/bl.y4" target="_blank">Instagram</a>
             <a href="mailto:rashed.humaid101@gmail.com" target="_blank">Email Me</a>
@@ -85,6 +159,7 @@
             <a href="https://github.com/555u" target="_blank">GitHub</a>
             <a href="https://555u.github.io/portfolio/" target="_blank">Portfolio</a>
         </div>
+        <a class="pdf-button" href=""C:\Users\20190024050\Downloads\ALL OF MY USERNAMES.pdf"" target="_blank">𝘄𝗮𝗻𝘁 𝘀𝗺𝘁𝗵𝗻 𝗮𝗱𝗱 𝗺𝗲        </a>
         <div class="footer">Made with ❤️ by Rashed</div>
     </div>
 </body>
